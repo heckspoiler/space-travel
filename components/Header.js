@@ -4,8 +4,8 @@ import style from "../styles/Header.module.css";
 function Header() {
   return (
     <header className={style.header}>
-      <img src="/assets/shared/logo.svg" alt="logo" className="h-12" />
-      <div className="h-1px w-72 bg-white opacity-25"></div>
+      <img src="/assets/shared/logo.svg" alt="logo" className="h-12 ml-12" />
+      <div className={style.stroke}></div>
       <nav className={style.navbar}>
         <Link href="/" className={style.navlink}>
           HOME
