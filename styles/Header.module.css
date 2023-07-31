@@ -9,12 +9,13 @@
 .header {
       display: flex;
       justify-content: space-between;
-      margin-top: 24px;
+      margin-top: 2.5rem;
       position: fixed;
       width: 100%;
       align-items: center;
       font-family: "Barlow Condensed";
       height: 5.8rem;
+      z-index: 1;
 
 }
 
