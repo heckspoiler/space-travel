@@ -1,9 +1,10 @@
 import Link from "next/link";
+import styles from "../styles/index.module.css";
 import Header from "../components/Header";
 
 function HomePage() {
   return (
-    <div className="bg-blue-500 h-screen flex items-center justify-center text-white text-2xl">
+    <div className={styles.container}>
       <Header />
       <div>
         Welcome to Next.js!
