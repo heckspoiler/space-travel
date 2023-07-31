@@ -1,0 +1,78 @@
+@font-face {
+      font-family: 'Barlow Condensed';
+      src: url("../public/assets/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf") format('true-type');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+}
+
+.header {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+      position: fixed;
+      width: 100%;
+      align-items: center;
+      font-family: "Barlow Condensed";
+      height: 4.8rem;
+}
+
+.navbar {
+      color: white;
+      font-family: "Barlow Condensed", sans-serif;
+      letter-spacing: 2.7px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      backdrop-filter: blur(20px);
+      background-color: rgba(225, 225, 225, 0.05);
+      width: 60%;
+}
+
+.navlink {
+      height: 100%;
+      text-align: center;
+      padding: 27px 2px;
+      text-justify: center;
+      position: relative;
+      font-size: 14px;
+      transition: border-bottom 0.3s ease-in-out;
+}
+
+.navlink:hover {
+      border-bottom: 2px solid white;
+}
+
+.navlink:nth-of-type(1)::before {
+      content: "00";
+      height: 100%;
+      width: 100%;
+      margin-right: 8px;
+      font-weight: bold;
+}
+
+.navlink:nth-of-type(2)::before {
+      content: "01";
+      height: 100%;
+      width: 100%;
+      margin-right: 8px;
+      font-weight: bold;
+}
+
+.navlink:nth-of-type(3)::before {
+      content: "02";
+      height: 100%;
+      width: 100%;
+      margin-right: 8px;
+      font-weight: bold;
+}
+
+.navlink:nth-of-type(4)::before {
+      content: "03";
+      height: 100%;
+      width: 100%;
+      margin-right: 8px;
+      font-weight: bold;
+}

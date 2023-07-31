@@ -1,27 +1,22 @@
 import Link from "next/link";
+import style from "../styles/Header.module.css";
 
 function Header() {
   return (
-    <header className="bg-transparent flex flex-row items-center p-4 w-screen justify-between">
+    <header className={style.header}>
       <img src="/assets/shared/logo.svg" alt="logo" className="h-12" />
-      <div className="h-1px w-72 bg-gray-400 absolute"></div>
-      <nav className="text-white font-barlow tracking-wider w-100 gap-24 flex  bg-red-400 items-center">
-        <Link href="/" className="h-20 text-center bg-blue-300 py-7 px-3">
+      <div className="h-1px w-72 bg-white opacity-25"></div>
+      <nav className={style.navbar}>
+        <Link href="/" className={style.navlink}>
           HOME
         </Link>
-        <Link
-          href="/destination"
-          className="h-20 text-center bg-blue-300 py-7 px-3"
-        >
+        <Link href="/destination" className={style.navlink}>
           DESTINATION
         </Link>
-        <Link href="/crew" className="h-20 text-center bg-blue-300 py-7 px-3">
+        <Link href="/crew" className={style.navlink}>
           CREW
         </Link>
-        <Link
-          href="/technology"
-          className="h-20 text-center bg-blue-300 py-7 px-3"
-        >
+        <Link href="/technology" className={style.navlink}>
           TECHNOLOGY
         </Link>
       </nav>
