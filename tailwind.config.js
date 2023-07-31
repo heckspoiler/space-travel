@@ -6,6 +6,10 @@ module.exports = {
       height: {
         "1px": "1px",
       },
+      fontFamily: {
+        barlow: ["Barlow Condensed", "sans-serif"],
+        bellefair: ["Bellefair", "serif"],
+      },
     },
   },
   variants: {
