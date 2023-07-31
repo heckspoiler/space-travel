@@ -4,7 +4,7 @@
 
 @font-face {
       font-family: 'Barlow Condensed';
-      src: url('/public/assets/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf') format('true-type');
+      src: url('../public/assets/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf') format('true-type');
       font-weight: 400;
       font-style: normal;
       font-display: swap;
@@ -12,17 +12,8 @@
 
 @font-face {
       font-family: 'Bellefair';
-      src: url('/public/assets/fonts/Bellefair/Bellefair-Regular.ttf') format('true-type');
+      src: url('../public/assets/fonts/Bellefair/Bellefair-Regular.ttf') format('true-type');
       font-weight: 400;
       font-style: normal;
       font-display: swap;
-}
-
-
-
-.navtext {
-
-      font-size: 16px;
-      letter-spacing: 2.7px;
-      color: white;
 }
