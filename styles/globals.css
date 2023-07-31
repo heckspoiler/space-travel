@@ -1,3 +1,13 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+
+.navtext {
+      font-family: 'Bellefair' sans-serif;
+      font-size: 16px;
+      letter-spacing: 2.7px;
+      color: white;
+}
