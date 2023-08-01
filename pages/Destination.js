@@ -1,7 +1,7 @@
+import { useState } from "react";
 import style from "../styles/Destination.module.css";
 import Header from "../components/Header";
 import MainSectionContainer from "../components/mainSectionContainer";
-import { Main } from "next/document";
 
 const planets = [
   {
@@ -43,40 +43,45 @@ const planets = [
 ];
 
 function Destination() {
+  const [selectedPlanet, setSelectedPlanet] = useState(planets[0]);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handlePlanetClick = (planet, index) => {
+    setSelectedPlanet(planet);
+    setActiveIndex(index);
+  };
+
   return (
     <div className={style.container}>
       <Header />
       <MainSectionContainer>
         <h2 className={style.sectionTitle}>Pick Your Destination</h2>
         <section className={style.sectionLeft}>
-          <img src={planets[0].src} alt={planets[0].alt} />
+          <img src={selectedPlanet.src} alt={selectedPlanet.alt} />
         </section>
         <section className={style.sectionRight}>
           <nav className={style.planetNav}>
-            <ul onClick={() => handlePlanetClick(planets[0])}>
-              <a>moon</a>
-            </ul>
-            <ul onClick={() => handlePlanetClick(planets[1])}>
-              <a>mars</a>
-            </ul>
-            <ul onClick={() => handlePlanetClick(planets[2])}>
-              <a>europa</a>
-            </ul>
-            <ul onClick={() => handlePlanetClick(planets[3])}>
-              <a>titan</a>
-            </ul>
+            {planets.map((planet, index) => (
+              <ul
+                key={index}
+                onClick={() => handlePlanetClick(planet, index)}
+                className={index === activeIndex ? `${style.active}` : ""}
+              >
+                <a>{planet.title}</a>
+              </ul>
+            ))}
           </nav>
-          <h3>{planets[0].title}</h3>
-          <p>{planets[0].description}</p>
-          <div className={style.stroke}></div>
+          <h3 className={style.sectionRightTitle}>{selectedPlanet.title}</h3>
+          <p className={style.description}>{selectedPlanet.description}</p>
+          <div className={style.strokeBelow}></div>
           <section className={style.bottomSection}>
             <div className={style.distance}>
               <p>Avg. Distance</p>
-              <h4>{planets[0].distance}</h4>
+              <h4>{selectedPlanet.distance}</h4>
             </div>
             <div className={style.travel}>
               <p>Est. Travel Time</p>
-              <h4>{planets[0].travel}</h4>
+              <h4>{selectedPlanet.travel}</h4>
             </div>
           </section>
         </section>
