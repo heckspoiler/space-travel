@@ -39,6 +39,32 @@
       align-items: center;
 }
 
+.sectionRight {
+      padding-top: 30px;
+}
+
+.planetNav {
+      display: flex;
+      gap: 30px;
+      height: 2rem;
+}
+
+.planetNav ul {
+
+      text-transform: uppercase;
+      height: 100%;
+      color: white;
+      opacity: 0.6;
+      transition: 0.2s border-bottom ease-in-out, color 0.2s ease-in-out;
+}
+
+.planetNav ul:hover {
+
+      border-bottom: 2px solid white;
+      cursor: pointer;
+      opacity: 0.9;
+}
+
 
 .sectionLeft img {
       scale: 0.75;

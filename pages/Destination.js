@@ -52,8 +52,33 @@ function Destination() {
           <img src={planets[0].src} alt={planets[0].alt} />
         </section>
         <section className={style.sectionRight}>
-          <section></section>
+          <nav className={style.planetNav}>
+            <ul onClick={() => handlePlanetClick(planets[0])}>
+              <a>moon</a>
+            </ul>
+            <ul onClick={() => handlePlanetClick(planets[1])}>
+              <a>mars</a>
+            </ul>
+            <ul onClick={() => handlePlanetClick(planets[2])}>
+              <a>europa</a>
+            </ul>
+            <ul onClick={() => handlePlanetClick(planets[3])}>
+              <a>titan</a>
+            </ul>
+          </nav>
           <h3>{planets[0].title}</h3>
+          <p>{planets[0].description}</p>
+          <div className={style.stroke}></div>
+          <section className={style.bottomSection}>
+            <div className={style.distance}>
+              <p>Avg. Distance</p>
+              <h4>{planets[0].distance}</h4>
+            </div>
+            <div className={style.travel}>
+              <p>Est. Travel Time</p>
+              <h4>{planets[0].travel}</h4>
+            </div>
+          </section>
         </section>
       </MainSectionContainer>
     </div>
