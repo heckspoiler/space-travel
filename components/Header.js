@@ -10,13 +10,13 @@ function Header() {
         <Link href="/" className={style.navlink}>
           HOME
         </Link>
-        <Link href="/destination" className={style.navlink}>
+        <Link href="/Destination" className={style.navlink}>
           DESTINATION
         </Link>
-        <Link href="/crew" className={style.navlink}>
+        <Link href="/Crew" className={style.navlink}>
           CREW
         </Link>
-        <Link href="/technology" className={style.navlink}>
+        <Link href="/Technology" className={style.navlink}>
           TECHNOLOGY
         </Link>
       </nav>
