@@ -12,20 +12,15 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/Crew": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/Crew.js"
     ],
-    "/Destination": [
+    "/Technology": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Destination.js"
+      "static/chunks/pages/Technology.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

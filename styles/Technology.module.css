@@ -1,0 +1,33 @@
+.container {
+      height: 100vh;
+      width: 100vw;
+      background-image: url("../public/assets/technology/background-technology-desktop.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+}
+
+.sectionTitle {
+      color: white;
+      text-transform: uppercase;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 24px;
+      position: absolute;
+      margin-top: 12rem;
+      margin-left: calc(5rem + 5vw);
+      opacity: 1;
+      left: 0;
+      top: 0;
+}
+
+.sectionTitle::before {
+      content: "03";
+      margin-right: 17px;
+      opacity: 0.6;
+}
+
+.sectionLeft,
+.sectionRight {
+      width: 100%;
+      border: 1px solid white;
+}
