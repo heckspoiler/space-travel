@@ -25,3 +25,31 @@
       margin-right: 17px;
       opacity: 0.6;
 }
+
+.memberList {
+
+      height: 4rem;
+      width: calc(5rem + 6vw);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+}
+
+.listobject {
+      height: 12px;
+      width: 12px;
+      background-color: white;
+      opacity: 0.5;
+      border-radius: 50%;
+      transition: opacity 0.2s ease-in-out;
+}
+
+.listobject:hover {
+      cursor: pointer;
+}
+
+.listobjectActive {
+      opacity: 1;
+}

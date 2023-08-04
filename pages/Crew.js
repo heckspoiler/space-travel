@@ -51,20 +51,25 @@ function Crew() {
       <MainSectionContainer>
         <h2 className={style.sectionTitle}>Meet your crew</h2>
         <section className={style.sectionLeft}>
-          <ul>
+          <h3>{selectedMember.role}</h3>
+          <h2>{selectedMember.name}</h2>
+          <p>{selectedMember.description}</p>
+          <ul className={style.memberList}>
             {members.map((member, index) => (
               <li
-                key={index}
-                className={index === selectedIndex ? style.active : ""}
+                key={member.name}
+                className={`${style.listobject} ${
+                  index === selectedIndex ? style.listobjectActive : ""
+                }`}
                 onClick={() => handleMemberClick(member, index)}
-              >
-                <img src={member.image} alt={member.name} />
-              </li>
+              ></li>
             ))}
           </ul>
         </section>
 
-        <section className={style.sectionRight}></section>
+        <section className={style.sectionRight}>
+          <img src={selectedMember.image} alt={`image of ${members.name}`} />
+        </section>
       </MainSectionContainer>
     </div>
   );
