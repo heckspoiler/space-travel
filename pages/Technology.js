@@ -9,7 +9,7 @@ const technologies = [
     title: "Launch Vehicle",
     image: "assets/technology/image-launch-vehicle-portrait.jpg",
     description:
-      "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. A launch system includes the launch vehicle, launch pad, vehicle assembly and fuelling systems, range safety, and other related infrastructure.",
+      "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
   },
 
   {
@@ -41,7 +41,7 @@ function Technology() {
   return (
     <div className={style.container}>
       <Header />
-      <MainSectionContainer>
+      <MainSectionContainer reverse={true}>
         <h2 className={style.sectionTitle}>Space Launch 101</h2>
         <section className={style.sectionLeft}>
           <ul className={style.list}>
