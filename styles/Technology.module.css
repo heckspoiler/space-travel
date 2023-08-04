@@ -2,7 +2,7 @@
       height: 100vh;
       width: 100vw;
       background-image: url("../public/assets/technology/background-technology-desktop.jpg");
-      background-size: cover;
+      background-size: 110% 110%;
       background-repeat: no-repeat;
 
 }
@@ -26,8 +26,87 @@
       opacity: 0.6;
 }
 
-.sectionLeft,
+
+
+.sectionLeft {
+      display: flex;
+      flex-direction: row;
+      width: 65%;
+      padding: 0 calc(4rem + 5vw);
+      gap: 40px;
+}
+
 .sectionRight {
+      width: 45%;
+      height: 90%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+.sectionRight img {
+      scale: 1.3;
+}
+
+.list {
+
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+}
+
+.listelement {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      font-size: 1.4rem;
+      color: white;
+      height: calc(2rem + 2.5vw);
+      width: calc(2rem + 2.5vw);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.listelement:hover {
+      cursor: pointer;
+}
+
+.listelementActive {
+      background-color: white;
+      color: #0B0D17;
+}
+
+.subsectionLeft {
       width: 100%;
-      border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 30px;
+      gap: 5px;
+      padding-top: 40px;
+}
+
+.subtitleLeft {
+      color: white;
+      opacity: 0.5;
+      text-transform: uppercase;
+
+}
+
+.titleMain {
+      font-size: 3rem;
+      color: white;
+      text-transform: uppercase;
+}
+
+.paragraph {
+      color: white;
+      opacity: 0.5;
+      line-height: 1.8;
+      width: 92%;
+      height: 12rem;
+
 }

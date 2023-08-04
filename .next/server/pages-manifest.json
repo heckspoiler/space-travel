@@ -4,5 +4,6 @@
   "/_document": "pages/_document.js",
   "/Destination": "pages/Destination.js",
   "/Crew": "pages/Crew.js",
-  "/Technology": "pages/Technology.js"
+  "/Technology": "pages/Technology.js",
+  "/": "pages/index.js"
 }
