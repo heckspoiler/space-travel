@@ -107,3 +107,111 @@
 .listobjectActive {
       opacity: 1;
 }
+
+
+
+@media screen and (max-width: 768px) {
+
+
+      .container {
+
+            background-image: url("../public/assets/crew/background-crew-tablet.jpg");
+            display: flex;
+            justify-content: center;
+
+
+      }
+
+      .sectionTitle {
+            margin-top: 11rem;
+            margin-left: calc(2rem + 2vw);
+            font-size: 20px;
+      }
+
+
+      .sectionLeft {
+
+            justify-content: center;
+            align-items: center;
+            padding-top: 0;
+            padding-left: 0;
+            gap: 0;
+            height: 50vh;
+            margin-top: 5rem;
+
+
+      }
+
+      .roleTitle {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            color: white;
+            opacity: 0.6;
+      }
+
+      .nameTitle {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-transform: uppercase;
+            font-size: 2.8rem;
+            color: white;
+            opacity: 1;
+            text-align: center;
+
+      }
+
+      .paragraph {
+            color: white;
+            opacity: 0.8;
+            width: 65%;
+            padding-top: 10px;
+            line-height: 1.7;
+            height: 10rem;
+            text-align: center;
+      }
+
+      .memberList {
+
+            height: 0;
+            width: 7rem;
+            gap: 20px;
+            margin-top: 0;
+
+      }
+
+      .sectionRight {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            position: relative;
+            align-items: center;
+            height: 50vh;
+            margin-top: 2rem;
+      }
+
+      .sectionRight img {
+            scale: 0.8;
+            margin-right: 0;
+            margin-top: -60px;
+
+      }
+
+      .listobject {
+            height: 12px;
+            width: 12px;
+            background-color: white;
+            opacity: 0.5;
+            border-radius: 50%;
+            transition: opacity 0.2s ease-in-out;
+      }
+
+      .listobject:hover {
+            cursor: pointer;
+      }
+
+      .listobjectActive {
+            opacity: 1;
+      }
+
+
+}
