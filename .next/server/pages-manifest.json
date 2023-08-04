@@ -2,7 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Crew": "pages/Crew.js",
   "/Technology": "pages/Technology.js",
-  "/Destination": "pages/Destination.js"
+  "/Crew": "pages/Crew.js",
+  "/Destination": "pages/Destination.js",
+  "/": "pages/index.js"
 }
