@@ -6,3 +6,22 @@
       background-repeat: no-repeat;
 
 }
+
+.sectionTitle {
+      color: white;
+      text-transform: uppercase;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 24px;
+      position: absolute;
+      margin-top: 13rem;
+      margin-left: calc(5rem + 5vw);
+      opacity: 1;
+      left: 0;
+      top: 0;
+}
+
+.sectionTitle::before {
+      content: "02";
+      margin-right: 17px;
+      opacity: 0.6;
+}

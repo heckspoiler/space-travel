@@ -26,9 +26,7 @@ function Header() {
                 : style.navlink
             }
           >
-            <Link href={link.href}>
-              <span>{link.name}</span>
-            </Link>
+            <Link href={link.href}>{link.name}</Link>
           </ul>
         ))}
       </nav>
