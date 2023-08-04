@@ -6,7 +6,7 @@ import MainSectionContainer from "../components/mainSectionContainer";
 const members = [
   {
     role: "commander",
-    name: "Doug Hurley",
+    name: "Douglas Hurley",
     image: "/assets/crew/image-douglas-hurley.png",
     description:
       "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
@@ -51,9 +51,9 @@ function Crew() {
       <MainSectionContainer>
         <h2 className={style.sectionTitle}>Meet your crew</h2>
         <section className={style.sectionLeft}>
-          <h3>{selectedMember.role}</h3>
-          <h2>{selectedMember.name}</h2>
-          <p>{selectedMember.description}</p>
+          <h3 className={style.roleTitle}>{selectedMember.role}</h3>
+          <h2 className={style.nameTitle}>{selectedMember.name}</h2>
+          <p className={style.paragraph}>{selectedMember.description}</p>
           <ul className={style.memberList}>
             {members.map((member, index) => (
               <li
