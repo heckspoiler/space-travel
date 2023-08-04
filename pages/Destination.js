@@ -63,6 +63,7 @@ function Destination() {
           <nav className={style.planetNav}>
             {planets.map((planet, index) => (
               <ul
+                alt="list of planets"
                 key={index}
                 onClick={() => handlePlanetClick(planet, index)}
                 className={index === activeIndex ? `${style.active}` : ""}
