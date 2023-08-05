@@ -11,6 +11,15 @@
 
 }
 
+.hamburgerMenu {
+      display: none;
+}
+
+.hamburgerIcon {
+      display: none;
+}
+
+
 .navbar {
       color: white;
       font-family: "Barlow Condensed", sans-serif;
@@ -144,6 +153,17 @@
             width: 60%;
       }
 
+      .navlink {
+            height: 100%;
+            text-align: center;
+            padding: 34px 2px;
+            text-justify: center;
+            position: relative;
+            font-size: 14px;
+            transition: border-bottom 0.3s ease-in-out;
+            font-weight: 100;
+      }
+
 
       .stroke {
             visibility: hidden;
@@ -155,6 +175,53 @@
 
       .active::before {
             display: none;
+      }
+
+
+}
+
+
+@media screen and (max-width: 375px) {
+      .header {
+            margin-top: 0;
+      }
+
+      .navbar {
+            position: absolute;
+            height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 30px;
+            width: 60%;
+            left: 40%;
+            top: 0;
+            padding-top: 100px;
+            padding-left: 30px;
+      }
+
+      .navlink {
+
+            height: 20px;
+            text-align: left;
+            width: auto;
+            padding: 0;
+            position: relative;
+            font-size: 14px;
+            font-weight: 100;
+            display: flex;
+
+
+      }
+
+
+      .navlink::before {
+            display: block;
+      }
+
+      .active::before {
+            display: block;
       }
 
 

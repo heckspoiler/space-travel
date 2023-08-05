@@ -27,11 +27,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/Destination.js"
     ],
-    "/Technology": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Technology.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
