@@ -13,9 +13,11 @@ const links = [
 function Header() {
   const router = useRouter();
   const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleToggle = () => {
     setIsMobile(!isMobile);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   useEffect(() => {
@@ -33,9 +35,16 @@ function Header() {
   }, []);
   return (
     <header className={styles.header}>
-      <img src="/assets/shared/logo.svg" alt="logo" className="h-12 ml-12" />
+      <div className={styles.crossContainer} onClick={handleToggle}>
+        <div className={`${isMobile ? styles.crossStroke : ""}`}></div>
+        <div className={`${isMobile ? styles.crossStroke : ""}`}></div>
+        <div className={`${isMobile ? styles.crossStroke : ""}`}></div>
+      </div>
+      <img src="/assets/shared/logo.svg" alt="logo" className={styles.logo} />
       <div className={styles.stroke}></div>
-      <nav className={isMobile ? styles.hamburgerMenu : styles.navbar}>
+      <nav
+        className={`${styles.navbar} ${isMobile ? styles.navbarVisible : ""}`}
+      >
         {links.map((link, index) => (
           <ul
             key={index}
@@ -48,9 +57,6 @@ function Header() {
             <Link href={link.href}>{link.name}</Link>
           </ul>
         ))}
-        <div className={styles.hamburgerIcon} onClick={handleToggle}>
-          <img src="/path-to-hamburger-icon" alt="menu" />
-        </div>
       </nav>
     </header>
   );
