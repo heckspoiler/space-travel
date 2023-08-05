@@ -189,7 +189,9 @@
       }
 
       .logo {
-            margin-left: 1rem;
+            margin-left: 1.5rem;
+            margin-top: 20px;
+            height: 3.5rem;
       }
 
       .navbar {
