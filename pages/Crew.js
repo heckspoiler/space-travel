@@ -47,8 +47,8 @@ function Crew() {
   };
   return (
     <div className={style.container}>
-      <Header />
-      <MainSectionContainer>
+      <Header className={style.header} />
+      <MainSectionContainer reverseSmall={true}>
         <h2 className={style.sectionTitle}>Meet your crew</h2>
         <section className={style.sectionLeft}>
           <h3 className={style.roleTitle}>{selectedMember.role}</h3>
@@ -68,6 +68,7 @@ function Crew() {
         </section>
 
         <section className={style.sectionRight}>
+          <div className={style.imgbox}></div>
           <img src={selectedMember.image} alt={`image of ${members.name}`} />
         </section>
       </MainSectionContainer>

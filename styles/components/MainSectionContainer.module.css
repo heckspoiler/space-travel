@@ -9,7 +9,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
       .container {
             display: flex;
@@ -19,6 +19,23 @@
       }
 
       .containerReverse {
+            flex-direction: column-reverse;
+      }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+      .container {
+            overflow: auto;
+      }
+
+      .containerReverse {
+            flex-direction: column-reverse;
+      }
+
+      .containerReverseSmall {
             flex-direction: column-reverse;
       }
 

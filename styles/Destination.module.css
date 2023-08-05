@@ -1,5 +1,5 @@
 .container {
-      height: 100vh;
+      height: 100%;
       width: 100vw;
       background-image: url("../public/assets/destination/background-destination-desktop.jpg");
       background-size: cover;
@@ -132,15 +132,14 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
       .container {
 
             background-image: url("../public/assets/destination/background-destination-tablet.jpg");
             display: flex;
             flex-direction: column;
-
-
+            height: 100vh;
       }
 
       .sectionTitle {
@@ -264,6 +263,195 @@
             flex-direction: column;
             gap: 5px;
       }
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+      .container {
+
+            background-image: url("../public/assets/destination/background-destination-mobile.jpg");
+            display: block;
+
+
+      }
+
+      .sectionTitle {
+
+            margin-top: 7rem;
+            margin-left: 0;
+            font-size: 15px;
+            width: 100%;
+            text-align: center;
+      }
+
+      .sectionTitle::before {
+            content: "01";
+            margin-right: 10px;
+            opacity: 0.6;
+      }
+
+      .sectionLeft,
+      .sectionRight {
+            width: auto;
+
+
+      }
+
+      .sectionLeft {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin-top: -3rem;
+            height: 10%;
+
+      }
+
+
+
+      .sectionLeft img {
+            scale: 0.45;
+      }
+
+      .sectionRight {
+            height: auto;
+            padding-top: 0;
+            margin-top: 6rem;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+      }
+
+      .sectionRightTitle {
+            font-size: 3rem;
+            color: white;
+            text-transform: uppercase;
+            opacity: 1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 35px;
+      }
+
+      .planetNav {
+            display: flex;
+            gap: 30px;
+            height: 0;
+      }
+
+      .planetNav ul {
+
+            text-transform: uppercase;
+            font-size: 13px;
+            height: 1.5rem;
+            color: white;
+            opacity: 0.6;
+            transition: 0.2s border-bottom ease-in-out, color 0.2s ease-in-out;
+
+      }
+
+      .planetNav ul:hover {
+
+            border-bottom: 2px solid white;
+            cursor: pointer;
+            opacity: 0.9;
+      }
+
+      .description {
+            color: white;
+            opacity: 0.6;
+            line-height: 1.7;
+            width: 70%;
+            text-align: center;
+            font-size: 0.7rem;
+
+
+      }
+
+      .strokeBelow {
+            height: 1px;
+            width: 78%;
+            background-color: white;
+            margin-top: 30px;
+            opacity: 0.2;
+      }
+
+      .bottomSection {
+
+            flex-direction: column;
+            color: white;
+            gap: 20px;
+
+            opacity: 1;
+            margin-top: 30px;
+            text-align: center;
+      }
+
+      .bottomSection p {
+            font-size: 0.7rem;
+            width: 100%;
+            opacity: 0.7;
+      }
+
+      .bottomSection h4 {
+            font-size: 1.5rem;
+
+      }
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+      .container {
+
+            background-image: url("../public/assets/destination/background-destination-mobile.jpg");
+            display: block;
+            height: 100%;
+
+
+      }
+
+
+
+
+      .sectionLeft,
+      .sectionRight {
+            width: auto;
+            height: 50%;
+
+
+      }
+
+      .sectionLeft {
+
+
+            margin-top: -4rem;
+            height: 10rem;
+
+      }
+
+
+
+
+      .sectionRight {
+            height: auto;
+            padding-top: 0;
+            margin-top: 2rem;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1rem;
+
+      }
+
 
 
 }
