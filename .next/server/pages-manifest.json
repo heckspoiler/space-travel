@@ -3,7 +3,7 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/Crew": "pages/Crew.js",
-  "/": "pages/index.js",
+  "/Technology": "pages/Technology.js",
   "/Destination": "pages/Destination.js",
-  "/Technology": "pages/Technology.js"
+  "/": "pages/index.js"
 }
