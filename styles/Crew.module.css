@@ -216,6 +216,18 @@
 
 }
 
+
+@media screen and (max-width: 850px) and (max-height: 1200px) {
+
+      .sectionRight img {
+            scale: 0.9;
+            margin-right: 0;
+            margin-top: 6rem;
+
+      }
+}
+
+
 @media screen and (max-width: 500px) {
 
       .container {
