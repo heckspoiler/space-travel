@@ -1,9 +1,10 @@
 {
+  "/Crew": "pages/Crew.html",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/Destination": "pages/Destination.html",
+  "/Technology": "pages/Technology.html",
+  "/": "pages/index.html",
   "/_document": "pages/_document.js",
-  "/Crew": "pages/Crew.js",
-  "/Destination": "pages/Destination.js",
-  "/Technology": "pages/Technology.js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
 }
